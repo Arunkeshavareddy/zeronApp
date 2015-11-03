@@ -1,0 +1,23 @@
+{
+  "name": "elitecmi",
+  "description": "External Interface for EliteDangerous",
+  "main": "index.js",
+  "authors": [
+    "Aleks <aadamovic@tehnik.design.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.14",
+    "angular-ui-router": "~0.2.15"
+  }
+}

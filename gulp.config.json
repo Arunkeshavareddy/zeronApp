@@ -1,0 +1,18 @@
+{
+  "build": "_build",
+  "index": "src/index.html",
+  "css": "src/**/*.css",
+  "html": "src/**/*.html",
+  "images": [
+    "src/assets/images/**"
+  ],
+  "fonts": [],
+  "js": [
+    "src/**/*.js"
+  ],
+  "vendorcss": [],
+  "vendorjs": [
+    "bower_components/angular/angular.min.js",
+    "bower_components/angular-ui-router/release/angular-ui-router.min.js"
+  ]
+}

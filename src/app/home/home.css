@@ -1,0 +1,8 @@
+.message {
+  color: white;
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-family: monospace;
+  text-align: center;
+  line-height: 100vh;
+}
