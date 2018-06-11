@@ -35,3 +35,4 @@ Bower can be used to install any additional 3rd party packages for the frontend.
     "bower_components/angular/angular.min.js"
   ]
 ```
+# zeronApp
