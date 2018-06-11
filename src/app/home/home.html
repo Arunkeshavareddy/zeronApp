@@ -1,1 +1,75 @@
-﻿<div class="message">{{vm.message}}</div>
+﻿<div ng-controller="homeController">
+    {{ respData | json}}
+
+    <div class="text-center gridView">
+        <h2>Zerion App</h2>
+        <br>
+
+        <button type="button" class="btn btn-primary addBtn" ng-click="addForm()">
+            <span class="fa fa-cart-plus fa-lg"></span> Add New
+        </button>
+
+        <button type="button" class="btn btn-default btn-sm viewChange" ng-click="gridForm()">
+            <span class="fa fa-th fa-lg"></span>
+        </button>
+        <button type="button" class="btn btn-default btn-sm viewChange" ng-click="tableForm()">
+            <span class="fa fa-th-list fa-lg"></span>
+        </button>
+
+        <h4>WOW! we can change this formate</h4>
+        <div ng-if="gridFormate" class="row text-center">
+
+            <div class="col-sm-4" ng-repeat="resp in respData">
+                <div class="thumbnail">
+                    <img ng-src="images/{{resp.imgs[0].url}}.jpg" alt={{resp.name}} width="400" height="300">
+                    <p>
+                        <strong>{{resp.name}}</strong>
+                    </p>
+                    <p>{{resp.description}}</p>
+                    <button type="button" class="btn btn-default btn-sm" ng-click="upsetForm(resp)">
+                        <span class="fa fa-pencil fa-lg"></span>
+                    </button>
+                    <button type="button" class="btn btn-default btn-sm" ng-click="deletForm(resp)">
+                        <span class="fa fa-trash fa-lg"></span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div ng-if="tableFormate">
+            <table class="table table-hover text-center">
+                <thead>
+                    <tr>
+                        <th>Country/City</th>
+                        <th>City Details</th>
+                        <th>Img</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="resp in respData">
+                        <td>
+                            <strong>{{resp.name}}</strong>
+                        </td>
+                        <td>{{resp.description}}</td>
+                        <td>
+                            <img src={{resp.imgs[0].url}} alt={{resp.name}} width="400" height="300">
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-sm" ng-click="upsetForm(resp)">
+                                <span class="fa fa-pencil fa-lg"></span>
+                            </button>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-default btn-sm" ng-click="deletForm(resp)">
+                                <span class="fa fa-trash fa-lg"></span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>

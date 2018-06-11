@@ -3,22 +3,20 @@
 
   angular
     .module('app', ['ui.router'])
-    .config(['$stateProvider', '$urlRouterProvider', configuration]);
+    .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
-  function configuration($stateProvider, $urlRouterProvider) {
+      $urlRouterProvider.otherwise('/');
 
-    $urlRouterProvider.otherwise('/');
-
-    $stateProvider
-      .state('home', {
-        url: '/',
-        views: {
-          'main@': {
-            templateUrl: 'app/home/home.html',
-            controller: 'homeController',
-            controllerAs: 'vm'
-          }
-        }
-      });
-  }
+      $stateProvider
+        .state('home', {
+          url: '/',
+          templateUrl: 'app/home/home.html',
+          controller: 'homeController'
+        })
+        .state('editHome', {
+          url: '/editHome',
+          templateUrl: 'app/editHome/editHome.html',
+          controller: 'editHomeController'
+        });
+    }]);
 }());

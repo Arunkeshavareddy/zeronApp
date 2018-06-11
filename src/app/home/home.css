@@ -1,8 +1,40 @@
-.message {
-  color: white;
-  font-size: 3vw;
-  text-transform: uppercase;
-  font-family: monospace;
-  text-align: center;
-  line-height: 100vh;
+.btn-sm{
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.7;
+  border-radius: 53px;
+  }
+  
+  .btn-sm:hover {
+  background-color:darkgray;
+  }
+
+ .table thead tr th {
+    vertical-align: middle;
+    text-align: center;
 }
+
+ .table tbody tr td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+  .gridView {
+      padding: 60px 50px;
+  }
+.addBtn{
+  float: left;
+}
+
+  .viewChange{
+    float: right;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
