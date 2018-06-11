@@ -2,8 +2,7 @@
     {{addIt.id}}
     {{addIt.name}}
     {{addIt.description}}
-    {{addIt.imgs}}
-
+    <img ng-src="{{addIt.imgs}}" />
           <form name="editingHome">
             <div class="form-group">
               <label>Name</label>
@@ -23,7 +22,7 @@
              
             <div class="form-group">
                 <label>Images</label>
-                <input class="form-control" type="text"  name="images" placeholder="Images"  ng-model="addIt.imgs" required>
+                <input class="form-control" type="file" ng-file-select="onFileSelect($files)"   name="images" placeholder="Images"  ng-model="addIt.imgs" required>
                 <div ng-if="editingHome.images.$error.required && (editingHome.images.$dirty || editingHome.description.$touched)" class="alert alert-danger">
                   <div>This is required!</div>
                 </div>

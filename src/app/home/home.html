@@ -21,7 +21,7 @@
 
             <div class="col-sm-4" ng-repeat="resp in respData">
                 <div class="thumbnail">
-                    <img ng-src="images/{{resp.imgs[0].url}}.jpg" alt={{resp.name}} width="400" height="300">
+                    <img ng-src={{resp.imgs[0].url}} alt={{resp.name}} width="400" height="300">
                     <p>
                         <strong>{{resp.name}}</strong>
                     </p>
@@ -54,7 +54,7 @@
                         </td>
                         <td>{{resp.description}}</td>
                         <td>
-                            <img src={{resp.imgs[0].url}} alt={{resp.name}} width="400" height="300">
+                            <img ng-src={{resp.imgs[0].url}} alt={{resp.name}} width="400" height="300">
                         </td>
                         <td>
                             <button type="button" class="btn btn-default btn-sm" ng-click="upsetForm(resp)">

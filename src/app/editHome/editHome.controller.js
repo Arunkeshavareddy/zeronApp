@@ -13,6 +13,10 @@
             $scope.addIt.description = sharedList.getList().description;
             $scope.addIt.imgs = sharedList.getList().imgs;
 
+            $scope.$on("fileProgress", function(e, progress) {
+                $scope.progress = progress.loaded / progress.total;
+              });
+
             $scope.saveForm = function (addIt) {
                 console.log(addIt.id + '' + addIt.name + '' + addIt.description + '' + addIt.imgs);
                        if(addIt.id === null){
