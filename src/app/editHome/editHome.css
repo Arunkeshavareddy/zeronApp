@@ -1,10 +1,16 @@
-.example-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
+.editingHome {
+  padding: 27px 30px;
+  font-size: 18px;
+  line-height: 1.7;
+  border-radius: 53px;
   }
+
+
+
+  .editingHome .addBtn{
+    float: right;
+    margin: 5px;
+  }
+
   
-  .example-full-width {
-    width: 100%;
-  }
   

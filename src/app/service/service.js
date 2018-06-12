@@ -25,7 +25,7 @@
                         "content-type": "application/json"
 
                     },
-                    body: {
+                    data: {
                         "name": addIt.name,
                         "description": addIt.description,
                         "imgs": [
@@ -46,7 +46,7 @@
                         "content-type": "application/json"
 
                     },
-                    body: {
+                    data: {
                         "name": addIt.name,
                         "description": addIt.description,
                         "imgs": [

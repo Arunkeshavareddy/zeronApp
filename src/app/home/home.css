@@ -1,39 +1,45 @@
-.btn-sm{
+.mainPage .btn-sm{
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.7;
   border-radius: 53px;
   }
   
-  .btn-sm:hover {
+  .mainPage .btn-sm:hover {
   background-color:darkgray;
   }
 
- .table thead tr th {
+  .mainPage .table thead tr th {
     vertical-align: middle;
     text-align: center;
 }
 
- .table tbody tr td {
+.mainPage .table tbody tr td {
     vertical-align: middle;
     text-align: center;
 }
 
 
-  .gridView {
+  .mainPage .gridView {
       padding: 60px 50px;
   }
-.addBtn{
+.mainPage .addBtn{
   float: left;
 }
 
-  .viewChange{
+  .mainPage .viewChange{
     float: right;
+  }
+
+  .mainPage .gridView {
+
+    padding: 0px 50px;
+  
   }
   
 
   @media screen and (max-width: 768px) {
-    .col-sm-4 {
+    .mainPage .col-sm-4 {
       text-align: center;
       margin: 25px 0;
     }

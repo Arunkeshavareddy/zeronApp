@@ -2,3 +2,13 @@
   background:  #f6f6f6;
   margin: 0;
 }
+
+.navbar {
+  background-color: darkblue;
+}
+
+.navbar .navbar-brand{
+  color: white;
+}
+
+
